@@ -1,10 +1,11 @@
 ﻿namespace PortfolioRebalancer.Models
 {
+	using System;
 	using System.Collections;
 	using System.Collections.Generic;
 	using System.Collections.ObjectModel;
 
-	public class Household : RebalanceItemContainer, IEnumerable, IEnumerable<Portfolio>
+	public class Household : RebalanceItemContainer
 	{
 		public Household() : base(NodeType.Household)
 		{
@@ -18,14 +19,9 @@
 			Portfolios.Add(portfolio);
 		}
 
-		public IEnumerator<Portfolio> GetEnumerator()
+		public override IEnumerator<RebalanceItem> GetEnumerator()
 		{
 			return Portfolios.GetEnumerator();
-		}
-
-		IEnumerator IEnumerable.GetEnumerator()
-		{
-			return GetEnumerator();
 		}
 	}
 }

@@ -19,6 +19,8 @@
 			portfolio.Add(position);
 			container.Add(portfolio);
 
+			
+
 		}
 	}
 }
