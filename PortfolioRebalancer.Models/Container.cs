@@ -5,21 +5,21 @@
 	using System.Collections.Generic;
 	using System.Collections.ObjectModel;
 
-	public class Container : IEnumerable, IEnumerable<RebalanceItemContainer>
+	public class Container : IEnumerable, IEnumerable<RebalanceItemContainerBase>
 	{
-		private ICollection<RebalanceItemContainer> _container;
+		private ICollection<RebalanceItemContainerBase> _container;
 
 		public Container()
 		{
-			_container = new Collection<RebalanceItemContainer>();
+			_container = new Collection<RebalanceItemContainerBase>();
 		}
 
-		public void Add(RebalanceItemContainer container)
+		public void Add(RebalanceItemContainerBase container)
 		{
 			_container.Add(container);
 		}
 
-		public IEnumerator<RebalanceItemContainer> GetEnumerator()
+		public IEnumerator<RebalanceItemContainerBase> GetEnumerator()
 		{
 			return _container.GetEnumerator();
 		}

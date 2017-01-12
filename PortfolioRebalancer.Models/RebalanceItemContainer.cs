@@ -3,18 +3,31 @@
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
+	using System.Collections.ObjectModel;
 
-	public abstract class RebalanceItemContainer : RebalanceItem, IEnumerable, IEnumerable<RebalanceItem>
+	public abstract class RebalanceItemContainer<TItem> : RebalanceItemContainerBase, IEnumerable<TItem>
+		where TItem : RebalanceItem
 	{
 		protected RebalanceItemContainer(NodeType type) : base(type)
 		{
+			Items = new Collection<TItem>();
 		}
 
-		public abstract IEnumerator<RebalanceItem> GetEnumerator();
+		protected ICollection<TItem> Items { get; }
 
-		IEnumerator IEnumerable.GetEnumerator()
+		public void Add(TItem item)
 		{
-			return GetEnumerator();
+			Items.Add(item);
+		}
+
+		public override IEnumerator<RebalanceItem> GetEnumerator()
+		{
+			return Items.GetEnumerator();
+		}
+
+		IEnumerator<TItem> IEnumerable<TItem>.GetEnumerator()
+		{
+			return Items.GetEnumerator();
 		}
 	}
 }

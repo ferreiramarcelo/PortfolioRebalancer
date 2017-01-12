@@ -43,6 +43,7 @@
     <Compile Include="Container.cs" />
     <Compile Include="Household.cs" />
     <Compile Include="RebalanceItem.cs" />
+    <Compile Include="RebalanceItemContaineBase.cs" />
     <Compile Include="RebalanceItemContainer.cs" />
     <Compile Include="NodeType.cs" />
     <Compile Include="Portfolio.cs" />

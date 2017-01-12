@@ -5,23 +5,10 @@
 	using System.Collections.Generic;
 	using System.Collections.ObjectModel;
 
-	public class Portfolio : RebalanceItemContainer
+	public class Portfolio : RebalanceItemContainer<Position>
 	{
 		public Portfolio() : base(NodeType.Portfolio)
 		{
-			Positions = new Collection<Position>();
-		}
-
-		public ICollection<Position> Positions { get; }
-
-		public void Add(Position position)
-		{
-			Positions.Add(position);
-		}
-
-		public override IEnumerator<RebalanceItem> GetEnumerator()
-		{
-			return Positions.GetEnumerator();
 		}
 	}
 }
