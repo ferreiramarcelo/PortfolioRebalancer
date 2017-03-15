@@ -1,6 +1,7 @@
 ﻿namespace UnitTestProject1
 {
-	using System;
+	using System.Collections.Generic;
+	using System.Linq;
 	using Microsoft.VisualStudio.TestTools.UnitTesting;
 	using PortfolioRebalancer.Models;
 
@@ -10,7 +11,7 @@
 		[TestMethod]
 		public void TestMethod1()
 		{
-			Container container = new Container();
+			var container = new List<RebalanceItemContainerBase>();
 
 			Household household = new Household();
 			household.Add(new Portfolio());
@@ -24,6 +25,10 @@
 			container.Add(portfolio);
 
 			//container.Add(new Position());
+
+			var households = container.Where(item => item.Type == NodeType.Household).ToArray();
+
+			var portfolios = container.Where(item => item.Type == NodeType.Portfolio).ToArray();
 
 			foreach (RebalanceItem item in container)
 			{

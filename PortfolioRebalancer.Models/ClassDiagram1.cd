@@ -15,13 +15,13 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PortfolioRebalancer.Models.Position">
-    <Position X="14" Y="3.75" Width="1.5" />
+    <Position X="10.75" Y="3.75" Width="1.5" />
     <InheritanceLine Type="PortfolioRebalancer.Models.RebalanceItem" ManuallyRouted="true">
       <Path>
         <Point X="8" Y="2.055" />
-        <Point X="8" Y="2.625" />
-        <Point X="14.75" Y="2.625" />
-        <Point X="14.75" Y="3.75" />
+        <Point X="8" Y="3.365" />
+        <Point X="11.5" Y="3.365" />
+        <Point X="11.5" Y="3.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -37,17 +37,16 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PortfolioRebalancer.Models.RebalanceItemContainer&lt;TItem&gt;">
-    <Position X="3.5" Y="6" Width="2" />
+    <Position X="3.5" Y="7" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAACBAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>RebalanceItemContainer.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PortfolioRebalancer.Models.RebalanceItemContainerBase">
-    <Position X="3.75" Y="3.75" Width="1.5" />
+    <Position X="3.25" Y="3.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAABAAAAAAAAAAABAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>RebalanceItemContaineBase.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
