@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Container.cs" />
     <Compile Include="Household.cs" />
+    <Compile Include="IRebalanceItemContainerManager.cs" />
     <Compile Include="RebalanceItem.cs" />
     <Compile Include="RebalanceItemContaineBase.cs" />
     <Compile Include="RebalanceItemContainer.cs" />

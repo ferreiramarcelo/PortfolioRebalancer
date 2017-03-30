@@ -42,6 +42,7 @@
       <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>RebalanceItemContainer.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PortfolioRebalancer.Models.RebalanceItemContainerBase">
     <Position X="3.25" Y="3.75" Width="2.75" />
@@ -49,7 +50,14 @@
       <HashCode>AAIAAAAAAAAAABAAAAAAAAAAABAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>RebalanceItemContaineBase.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.231" />
   </Class>
+  <Interface Name="PortfolioRebalancer.Models.IRebalanceItemContainerManager&lt;TItem&gt;">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRebalanceItemContainerManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
