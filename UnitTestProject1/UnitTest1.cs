@@ -18,10 +18,13 @@
 
 			container.Add(household);
 
-			Position position = new Position();
+			Position cash = new Cash(1500.5m);
+			Position mutualFund = new MutualFund("MMX", 2800.2m);
 			Portfolio portfolio = new Portfolio();
 
-			portfolio.Add(position);
+			portfolio.Add(cash);
+			portfolio.Add(mutualFund);
+
 			container.Add(portfolio);
 
 			//container.Add(new Position());

@@ -2,8 +2,10 @@
 {
 	public enum NodeType
 	{
-		Position,
+		Household,
 		Portfolio,
-		Household
+		Stock,
+		MutualFund,
+		Cash
 	}
 }

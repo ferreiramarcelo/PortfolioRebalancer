@@ -1,6 +1,6 @@
 ﻿namespace PortfolioRebalancer.Models
 {
-	public class Household : RebalanceItemContainer<Portfolio>
+	public sealed class Household : RebalanceItemContainer<Portfolio>
 	{
 		public Household() : base(NodeType.Household)
 		{
