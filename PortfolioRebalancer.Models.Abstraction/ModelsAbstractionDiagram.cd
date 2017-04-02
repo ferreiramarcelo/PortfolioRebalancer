@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PortfolioRebalancer.Models.Abstraction.Position">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="PortfolioRebalancer.Models.Abstraction.RebalanceItem" ManuallyRouted="true">
+      <Path>
+        <Point X="6.25" Y="2.247" />
+        <Point X="6.25" Y="2.635" />
+        <Point X="4.5" Y="2.635" />
+        <Point X="4.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAA=</HashCode>
+      <FileName>Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.RebalanceItem">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>RebalanceItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.RebalanceItemContainer&lt;TItem&gt;">
+    <Position X="6.5" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RebalanceItemContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.RebalanceItemContainerBase">
+    <Position X="6.5" Y="3.5" Width="2.5" />
+    <InheritanceLine Type="PortfolioRebalancer.Models.Abstraction.RebalanceItem" ManuallyRouted="true">
+      <Path>
+        <Point X="6.25" Y="2.247" />
+        <Point X="6.25" Y="2.615" />
+        <Point X="7.75" Y="2.615" />
+        <Point X="7.75" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAABAAAAAAAAAAABAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>RebalanceItemContaineBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.Security" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.SinglePosition">
+    <Position X="3.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SinglePosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PortfolioRebalancer.Models.Abstraction.IRebalanceItemContainerManager&lt;TItem&gt;">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRebalanceItemContainerManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="PortfolioRebalancer.Models.Abstraction.NodeType" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAQAIAAAAgAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>NodeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

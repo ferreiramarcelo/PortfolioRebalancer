@@ -1,10 +1,11 @@
 ﻿namespace PortfolioRebalancer.Models
 {
-	public sealed class Household : RebalanceItemContainer<Portfolio>
-	{
-		public Household() : base(NodeType.Household)
-		{
-		}
+    using PortfolioRebalancer.Models.Abstraction;
 
-	}
+    public sealed class Household : RebalanceItemContainer<Portfolio>
+    {
+        public Household() : base(NodeType.Household)
+        {
+        }
+    }
 }

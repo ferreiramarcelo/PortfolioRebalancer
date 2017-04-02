@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49C95D7C-5A59-4ECE-8B1A-E9C0FC5229E6}</ProjectGuid>
+    <ProjectGuid>{101FD0E7-1242-48D7-B464-86854A3B90A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PortfolioRebalancer.Models</RootNamespace>
-    <AssemblyName>PortfolioRebalancer.Models</AssemblyName>
+    <RootNamespace>PortfolioRebalancer.Models.Abstraction</RootNamespace>
+    <AssemblyName>PortfolioRebalancer.Models.Abstraction</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,28 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cash.cs" />
-    <Compile Include="Household.cs" />
-    <Compile Include="MutualFund.cs" />
-    <Compile Include="Portfolio.cs" />
+    <Compile Include="IRebalanceItemContainerManager.cs" />
+    <Compile Include="NodeType.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stock.cs" />
+    <Compile Include="RebalanceItem.cs" />
+    <Compile Include="RebalanceItemContaineBase.cs" />
+    <Compile Include="RebalanceItemContainer.cs" />
+    <Compile Include="Security.cs" />
+    <Compile Include="SinglePosition.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ModelsDiagram.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PortfolioRebalancer.Models.Abstraction\PortfolioRebalancer.Models.Abstraction.csproj">
-      <Project>{101fd0e7-1242-48d7-b464-86854a3b90a4}</Project>
-      <Name>PortfolioRebalancer.Models.Abstraction</Name>
-    </ProjectReference>
+    <None Include="ModelsAbstractionDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace PortfolioRebalancer.Models
+﻿namespace PortfolioRebalancer.Models.Abstraction
 {
 	public abstract class SinglePosition : Position
 	{
