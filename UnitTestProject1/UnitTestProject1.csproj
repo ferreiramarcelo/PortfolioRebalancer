@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTestProject1</RootNamespace>
     <AssemblyName>UnitTestProject1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -58,10 +58,6 @@
     <ProjectReference Include="..\PortfolioRebalancer.Models.Abstraction\PortfolioRebalancer.Models.Abstraction.csproj">
       <Project>{101fd0e7-1242-48d7-b464-86854a3b90a4}</Project>
       <Name>PortfolioRebalancer.Models.Abstraction</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PortfolioRebalancer.Models\PortfolioRebalancer.Models.csproj">
-      <Project>{49c95d7c-5a59-4ece-8b1a-e9c0fc5229e6}</Project>
-      <Name>PortfolioRebalancer.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
