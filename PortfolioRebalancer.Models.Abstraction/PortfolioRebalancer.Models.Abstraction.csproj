@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRebalanceItemContainerManager.cs" />
+    <Compile Include="Household.cs" />
     <Compile Include="NodeType.cs" />
+    <Compile Include="Portfolio.cs" />
     <Compile Include="Position.cs" />
+    <Compile Include="PositionLink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RebalanceItem.cs" />
     <Compile Include="RebalanceItemContaineBase.cs" />
