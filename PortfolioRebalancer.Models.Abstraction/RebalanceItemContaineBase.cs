@@ -4,34 +4,34 @@
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
 
-    public abstract class RebalanceItemContainerBase : RebalanceItem, IEnumerable<RebalanceItem>
+    public abstract class ItemContainerBase : Item, IEnumerable<Item>
     {
-        private readonly ICollection<RebalanceItem> _items;
+        private readonly ICollection<Item> _items;
 
 
-        public static RebalanceItemContainer<Position> CreatePortfolio()
+        public static ItemContainer<Position> CreatePortfolio()
         {
-            return new RebalanceItemContainer<Position>(NodeType.Portfolio);
+            return new ItemContainer<Position>(NodeType.Portfolio);
         }
 
-        public static RebalanceItemContainer<RebalanceItemContainer<Position>> CreateHousehold()
+        public static ItemContainer<ItemContainer<Position>> CreateHousehold()
         {
-            return new RebalanceItemContainer<RebalanceItemContainer<Position>>(NodeType.Household);
+            return new ItemContainer<ItemContainer<Position>>(NodeType.Household);
         }
 
-        internal RebalanceItemContainerBase(NodeType type)
+        internal ItemContainerBase(NodeType type)
          : base(type)
         {
-            _items = new Collection<RebalanceItem>();
+            _items = new Collection<Item>();
         }
 
-        internal void Add(RebalanceItem item)
+        internal void Add(Item item)
         {
             item.Owner = this;
             _items.Add(item);
         }
 
-        public IEnumerator<RebalanceItem> GetEnumerator()
+        public IEnumerator<Item> GetEnumerator()
         {
             return _items.GetEnumerator();
         }

@@ -11,21 +11,21 @@
         public void TestMethod1()
         {
 
-            var household = RebalanceItemContainerBase.CreateHousehold();
-            var portfolio1 = RebalanceItemContainerBase.CreatePortfolio();
+            var household = ItemContainerBase.CreateHousehold();
+            var portfolio1 = ItemContainerBase.CreatePortfolio();
             household.Add(portfolio1);
 
             portfolio1.Add(Position.CreateCash(1500m));
             portfolio1.Add(Position.CreateMutualFund("MMX", 2500m));
             portfolio1.Add(Position.CreateStock(200, new Security("GOOG", 18.5m)));
 
-            var portfolio2 = RebalanceItemContainerBase.CreatePortfolio();
-            var portfolio3 = RebalanceItemContainerBase.CreatePortfolio();
+            var portfolio2 = ItemContainerBase.CreatePortfolio();
+            var portfolio3 = ItemContainerBase.CreatePortfolio();
 
             household.Add(portfolio1);
             household.Add(portfolio2);
 
-            var container = new List<RebalanceItemContainerBase>();
+            var container = new List<ItemContainerBase>();
             container.Add(household);
             container.Add(portfolio3);
 
@@ -49,7 +49,7 @@
 
             //var portfolios = container.Where(item => item.Type == NodeType.Portfolio).ToArray();
 
-            foreach (RebalanceItem item in container)
+            foreach (Item item in container)
             {
 
             }

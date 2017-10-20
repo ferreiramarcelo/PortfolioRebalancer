@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PortfolioRebalancer.Models.Abstraction.Security">
+    <Position X="1.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.Position">
+    <Position X="6.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEAAAAA=</HashCode>
+      <FileName>Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.Item">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.SecurityContext">
+    <Position X="4.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>SecurityContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.Household">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Household.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortfolioRebalancer.Models.Abstraction.Portfolio">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Portfolio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
