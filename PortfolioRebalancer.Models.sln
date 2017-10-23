@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioRebalancer.Models.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioRebalancer", "PortfolioRebalancer\PortfolioRebalancer.csproj", "{34C0F262-134E-4AC0-A6A4-F81EBE01B515}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioRebalancer.Data", "PortfolioRebalancer.Data\PortfolioRebalancer.Data.csproj", "{2C997CE9-C243-4D4C-A89E-EBF53B7B3CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioRebalancer.Data.Migrations", "PortfolioRebalancer.Data.Migrations\PortfolioRebalancer.Data.Migrations.csproj", "{69A70F7C-CE93-47E0-A580-CBD270BB916D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{34C0F262-134E-4AC0-A6A4-F81EBE01B515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34C0F262-134E-4AC0-A6A4-F81EBE01B515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34C0F262-134E-4AC0-A6A4-F81EBE01B515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C997CE9-C243-4D4C-A89E-EBF53B7B3CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C997CE9-C243-4D4C-A89E-EBF53B7B3CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C997CE9-C243-4D4C-A89E-EBF53B7B3CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C997CE9-C243-4D4C-A89E-EBF53B7B3CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A70F7C-CE93-47E0-A580-CBD270BB916D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A70F7C-CE93-47E0-A580-CBD270BB916D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A70F7C-CE93-47E0-A580-CBD270BB916D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A70F7C-CE93-47E0-A580-CBD270BB916D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

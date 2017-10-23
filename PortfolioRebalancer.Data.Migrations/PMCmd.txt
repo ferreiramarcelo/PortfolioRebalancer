@@ -1,0 +1,2 @@
+﻿Add-Migration -Name Init -StartUpProjectName PortfolioRebalancer -ProjectName PortfolioRebalancer.Data.Migrations -Verbose
+Update-Database -StartUpProjectName PortfolioRebalancer -ProjectName PortfolioRebalancer.Data.Migrations -Verbose

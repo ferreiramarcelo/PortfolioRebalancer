@@ -3,25 +3,23 @@ namespace PortfolioRebalancer.Data
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 
-	public class Household
+	public class Regulation
 	{
-		public Household()
+		public Regulation()
 		{
 			Portfolios = new HashSet<Portfolio>();
+			Rules = new HashSet<Rule>();
 		}
 
-		[StringLength(AppDataContext.IdLength)]
+		[StringLength(36)]
 		public string Id { get; set; }
-
-		[StringLength(AppDataContext.IdLength)]
-		public string HouseholdModelId { get; set; }
 
 		[Required]
 		[StringLength(128)]
 		public string Name { get; set; }
 
-		public virtual HouseholdModel HouseholdModel { get; set; }
-
 		public virtual ICollection<Portfolio> Portfolios { get; set; }
+
+		public virtual ICollection<Rule> Rules { get; set; }
 	}
 }
