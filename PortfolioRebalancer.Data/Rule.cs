@@ -15,7 +15,7 @@ namespace PortfolioRebalancer.Data
 		[Key]
 		[Column(Order = 1)]
 		[StringLength(36)]
-		public string RregulationId { get; set; }
+		public string RegulationId { get; set; }
 
 		public virtual Regulation Regulation { get; set; }
 
