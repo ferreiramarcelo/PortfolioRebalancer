@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppDataContextExtensions.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="History\201710231524434_Init.cs" />
     <Compile Include="History\201710231524434_Init.Designer.cs">

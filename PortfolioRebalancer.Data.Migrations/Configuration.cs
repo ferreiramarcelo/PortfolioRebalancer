@@ -21,70 +21,48 @@
 			context.Regulations.RemoveRange(context.Regulations);
 			context.Models.RemoveRange(context.Models);
 			context.Rules.RemoveRange(context.Rules);
+			context.Portfolios.RemoveRange(context.Portfolios);
 			context.Households.RemoveRange(context.Households);
 
 			context.SaveChanges();
 
-			var regulations = context.Add
-			(
-				7,
-				index => new Regulation
-				{
-					Id = DataGenerator.CreateId(),
-					Name = $"Regulation {index + 1}"
-				},
-				regulation => regulation.Name
-			);
+			var regulations = DataGenerator.CreateRegulations(7);
+			var models = DataGenerator.CreateModels(1);
+			var households = DataGenerator.CreateHouseholds(1, models, regulations);
+			var portfolios = DataGenerator.CreatePortfolios(households);
 
-			var models = context.Add
-			(
-				5,
-				index =>
-				{
-					Model model = new Model
-					{
-						Id = DataGenerator.CreateId(),
-						Name = $"Model {index + 1}"
-					};
-
-					return model;
-				},
-				model => model.Name
-			);
-
-			var random = new Random();
-
-			var min = 2;
-			var max = regulations.Length + 1;
-
-			var households = new List<Household>();
-
-			foreach (var model in models)
-			{
-				foreach (var regulation in regulations.Take(random.Next(min, max)).ToArray())
-				{
-					var rule = new Rule { ModelId = model.Id , RegulationId = regulation.Id};
-					model.Rules.Add(rule);
-				}
-
-				for (var index = 0; index < 5; index++)
-				{
-					var household = new Household
-					{
-						Id = DataGenerator.CreateId(),
-						Name = $"Household {index + households.Count + 1}",
-						ModelId = model.Id
-					};
-
-					households.Add(household);
-				}
-			}
-
+			context.Regulations.AddOrUpdate(regulations);
+			context.Models.AddOrUpdate(models);
 			context.Households.AddOrUpdate(households.ToArray());
+			context.Portfolios.AddOrUpdate(portfolios);
 
-			//var regulations = DataGenerator.CreateRegulation(7);
-			//var models = DataGenerator.CreateModels(5, regulations);
-			//context.Models.AddOrUpdate(models);
+			var singleReg = new Regulation
+			{
+				Id = Guid.Empty.ToString(),
+				Name = "Single Portfolio"
+			};
+
+			var singlModel = new Model
+			{
+				Id = Guid.Empty.ToString(),
+				Name = "Single Portfolio"
+			};
+
+			var singleRule = new Rule {ModelId = singlModel.Id, RegulationId = singleReg.Id, Ratio = 1};
+
+			var singleHh = new Household
+			{
+				Id = Guid.Empty.ToString(),
+				Name = "Single Portfolio",
+				ModelId = singlModel.Id
+			};
+
+			context.Regulations.AddOrUpdate(singleReg);
+			context.Models.AddOrUpdate(singlModel);
+			context.Rules.AddOrUpdate(singleRule);
+			context.Households.AddOrUpdate(singleHh);
+
+			context.Portfolios.AddOrUpdate(DataGenerator.CreatePortfolios(15));
 
 			//  This method will be called after migrating to the latest version.
 
