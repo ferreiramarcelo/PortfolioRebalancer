@@ -100,8 +100,8 @@
 			{
 				Id = portfolioId,
 				Name = $"Portfolio {portfolioId.Substring(0, 8)}",
-				HouseholdId = household?.Id ?? Guid.Empty.ToString(),
-				RegulationId = rule?.RegulationId ?? Guid.Empty.ToString()
+				HouseholdId = household?.Id, //?? Guid.Empty.ToString(),
+				RegulationId = rule?.RegulationId // ?? Guid.Empty.ToString()
 			};
 
 			return portfolio;

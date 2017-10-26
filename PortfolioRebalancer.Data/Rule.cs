@@ -20,5 +20,6 @@ namespace PortfolioRebalancer.Data
 		public virtual Regulation Regulation { get; set; }
 
 		public double Ratio { get; set; }
+
 	}
 }

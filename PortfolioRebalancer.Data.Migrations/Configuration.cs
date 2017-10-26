@@ -15,9 +15,22 @@
 			MigrationsDirectory = "History";
 		}
 
+		///<summary>
+		///This method will be called after migrating to the latest version.
+		///
+		///You can use the DbSet<T>.AddOrUpdate() helper extension method 
+		///to avoid creating duplicate seed data. E.g.
+		///
+		///  context.People.AddOrUpdate(
+		///    p => p.FullName,
+		///    new Person { FullName = "Andrew Peters" },
+		///    new Person { FullName = "Brice Lambson" },
+		///    new Person { FullName = "Rowan Miller" }
+		///  );
+		///</summary>
+		///<param name="context">Db Context</param>
 		protected override void Seed(AppDataContext context)
 		{
-
 			context.Regulations.RemoveRange(context.Regulations);
 			context.Models.RemoveRange(context.Models);
 			context.Rules.RemoveRange(context.Rules);
@@ -57,25 +70,12 @@
 				ModelId = singlModel.Id
 			};
 
-			context.Regulations.AddOrUpdate(singleReg);
-			context.Models.AddOrUpdate(singlModel);
-			context.Rules.AddOrUpdate(singleRule);
-			context.Households.AddOrUpdate(singleHh);
+			//context.Regulations.AddOrUpdate(singleReg);
+			//context.Models.AddOrUpdate(singlModel);
+			//context.Rules.AddOrUpdate(singleRule);
+			//context.Households.AddOrUpdate(singleHh);
 
 			context.Portfolios.AddOrUpdate(DataGenerator.CreatePortfolios(15));
-
-			//  This method will be called after migrating to the latest version.
-
-			//  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-			//  to avoid creating duplicate seed data. E.g.
-			//
-			//    context.People.AddOrUpdate(
-			//      p => p.FullName,
-			//      new Person { FullName = "Andrew Peters" },
-			//      new Person { FullName = "Brice Lambson" },
-			//      new Person { FullName = "Rowan Miller" }
-			//    );
-			//
 		}
 	}
 }
