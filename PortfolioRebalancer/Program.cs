@@ -119,8 +119,8 @@
 
 				
 		
-				var portfolios = intermediary.Get(models => models.Where(model => model.Household != null));
-				var portfolio = intermediary.Get(models => models.FirstOrDefault(model => model.Household != null));
+				var portfolios = intermediary.Get(models => models.Where(model => model.HouseholdId != null));
+				//var portfolio = intermediary.Get(models => models.FirstOrDefault(model => model.HouseholdId != null));
 
 				//var portfolios = intermediary.Get(models => model.Household != null);
 				//var portfolio = intermediary.Get(models => model.Household != null);

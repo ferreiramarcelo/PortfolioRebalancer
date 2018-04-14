@@ -6,6 +6,8 @@
 
 		public string Name { get; set; }
 
+		public string HouseholdId { get; set; }
+
 		public HouseholdViewModel Household { get; set; }
 	}
 }

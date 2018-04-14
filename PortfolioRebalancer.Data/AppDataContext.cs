@@ -11,13 +11,19 @@ namespace PortfolioRebalancer.Data
 		}
 
 		public virtual DbSet<Household> Households { get; set; }
-		public virtual DbSet<Model> Models { get; set; }
-		public virtual DbSet<Portfolio> Portfolios { get; set; }
-		public virtual DbSet<Position> Positions { get; set; }
-		public virtual DbSet<Regulation> Regulations { get; set; }
-		public virtual DbSet<Rule> Rules { get; set; }
-		public virtual DbSet<Stock> Stock { get; set; }
 
+		public virtual DbSet<Model> Models { get; set; }
+
+		public virtual DbSet<Portfolio> Portfolios { get; set; }
+
+		public virtual DbSet<Position> Positions { get; set; }
+
+		public virtual DbSet<Regulation> Regulations { get; set; }
+
+		public virtual DbSet<Rule> Rules { get; set; }
+
+		public virtual DbSet<Security> Securities { get; set; }
+		
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 		}

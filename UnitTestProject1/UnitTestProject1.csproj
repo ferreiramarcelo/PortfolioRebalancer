@@ -54,12 +54,6 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PortfolioRebalancer.Models.Abstraction\PortfolioRebalancer.Models.Abstraction.csproj">
-      <Project>{101fd0e7-1242-48d7-b464-86854a3b90a4}</Project>
-      <Name>PortfolioRebalancer.Models.Abstraction</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

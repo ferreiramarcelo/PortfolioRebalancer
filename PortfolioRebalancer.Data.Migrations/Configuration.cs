@@ -34,11 +34,14 @@
 			context.Regulations.RemoveRange(context.Regulations);
 			context.Models.RemoveRange(context.Models);
 			context.Rules.RemoveRange(context.Rules);
+			context.Securities.RemoveRange(context.Securities);
+			context.Positions.RemoveRange(context.Positions);
 			context.Portfolios.RemoveRange(context.Portfolios);
 			context.Households.RemoveRange(context.Households);
 
 			context.SaveChanges();
 
+			context.Securities.AddRange(DataGenerator.GetSecurities());
 			var regulations = DataGenerator.CreateRegulations(7);
 			var models = DataGenerator.CreateModels(1);
 			var households = DataGenerator.CreateHouseholds(1, models, regulations);
@@ -75,7 +78,7 @@
 			//context.Rules.AddOrUpdate(singleRule);
 			//context.Households.AddOrUpdate(singleHh);
 
-			context.Portfolios.AddOrUpdate(DataGenerator.CreatePortfolios(15));
+			context.Portfolios.AddOrUpdate(DataGenerator.CreatePortfolios(1));
 		}
 	}
 }

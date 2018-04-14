@@ -3,9 +3,9 @@ namespace PortfolioRebalancer.Data
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 
-	public class Stock
+	public class Security
 	{
-		public Stock()
+		public Security()
 		{
 			Positions = new HashSet<Position>();
 		}

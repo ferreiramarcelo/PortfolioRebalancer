@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{FE5C3342-28FE-45FA-9422-5AC23E71D90A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioRebalancer.Models.Abstraction", "PortfolioRebalancer.Models.Abstraction\PortfolioRebalancer.Models.Abstraction.csproj", "{101FD0E7-1242-48D7-B464-86854A3B90A4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioRebalancer", "PortfolioRebalancer\PortfolioRebalancer.csproj", "{34C0F262-134E-4AC0-A6A4-F81EBE01B515}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioRebalancer.Data", "PortfolioRebalancer.Data\PortfolioRebalancer.Data.csproj", "{2C997CE9-C243-4D4C-A89E-EBF53B7B3CF1}"
@@ -21,12 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FE5C3342-28FE-45FA-9422-5AC23E71D90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE5C3342-28FE-45FA-9422-5AC23E71D90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE5C3342-28FE-45FA-9422-5AC23E71D90A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{101FD0E7-1242-48D7-B464-86854A3B90A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{101FD0E7-1242-48D7-B464-86854A3B90A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{101FD0E7-1242-48D7-B464-86854A3B90A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{34C0F262-134E-4AC0-A6A4-F81EBE01B515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{34C0F262-134E-4AC0-A6A4-F81EBE01B515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34C0F262-134E-4AC0-A6A4-F81EBE01B515}.Release|Any CPU.ActiveCfg = Release|Any CPU

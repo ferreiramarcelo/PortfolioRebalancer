@@ -13,9 +13,9 @@ namespace PortfolioRebalancer.Data
 		public virtual Portfolio Portfolio { get; set; }
 
 		[StringLength(36)]
-		public string StockId { get; set; }
+		public string SecurityId { get; set; }
 
-		public virtual Stock Stock { get; set; }
+		public virtual Security Security { get; set; }
 
 		public int Quantity { get; set; }
 	}
